@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle-Array</title>
+</head>
+<body>
+
+    <script>
+
+        //------------Shuffle Array
+
+        let a=[1,2,3,4,5];
+        let b= a.length;
+        let suffle;
+        console.log(a);
+
+        while(b > 0){
+            let index= Math.floor(Math.random()* b);
+            b--;
+
+            suffle=a[b];
+            a[b]=a[index];
+            a[index]=suffle;
+        }
+        
+        console.log(a);
+
+        //------------Shuffle Array With Function 
+
+
+        // function shuffle(arra1) {
+        //     var ctr = arra1.length
+        //     let temp;
+        //     let index;
+
+
+        //     // While there are elements in the array
+        //         while (ctr > 0) {
+        //     // Pick a random index
+        //             index = Math.floor(Math.random() * ctr);
+        //     // Decrease ctr by 1
+        //             ctr--;
+        //     // And swap the last element with it
+        //             temp = arra1[ctr];
+        //             arra1[ctr] = arra1[index];
+        //             arra1[index] = temp;
+        //         }
+        //         return arra1;
+        // }
+        // var myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // console.log(shuffle(myArray));
+
+    </script>
+    
+</body>
+</html>
